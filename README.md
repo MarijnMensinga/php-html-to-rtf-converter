@@ -1,5 +1,5 @@
 # basic-HTML-to-RTF-converter
-Convert basic HTML output of TinyMCE to rtf
+Convert basic HTML output of TinyMCE to rtf with PHP
 
 Supported HTML:
 - Text styles
