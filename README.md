@@ -1,5 +1,5 @@
-# basic-HTML-to-RTF-converter
-Convert basic HTML output of TinyMCE to rtf with PHP
+# A PHP HTML-to-RTF-converter
+_Convert basic HTML output of TinyMCE to RTF with PHP_
 
 Supported HTML:
 - Text styles
@@ -15,6 +15,6 @@ Supported HTML:
 - Lists
   - Ordered
   - Unordered
-- Unicode chars
+- Unicode characters
 
 Example can be found in examples/index.php
