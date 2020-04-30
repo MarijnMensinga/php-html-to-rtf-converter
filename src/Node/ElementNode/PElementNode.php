@@ -17,7 +17,9 @@ class PElementNode extends ElementNode
         $styles = array_map('trim',$styles);
         foreach($styles as $styleDef)
         {
-            if(empty($styleDef)){ continue; }
+            if(empty($styleDef)) {
+                continue;
+            }
 
             $style = preg_split('/:/',$styleDef);
             $style = array_map('trim',$style);
@@ -45,7 +47,7 @@ class PElementNode extends ElementNode
                     break;
             }
         }
-        $this->setRtfPrepend($prepend.' ');
+        $this->setRtfPrepend($prepend . ' ');
         $this->setRtfAppend($append);
 
         return parent::parse();

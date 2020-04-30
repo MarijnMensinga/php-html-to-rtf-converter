@@ -1,14 +1,17 @@
 <?php
 namespace HtmlToRtf\Node;
 
+use DOMNode;
 use HtmlToRtf\Node;
 
 class TextNode extends Node
 {
     /**
-     * @return DOMText
+     * @return DOMNode
      */
-    protected function getDomNode(){ return parent::getDomNode(); }
+    protected function getDomNode() {
+        return parent::getDomNode();
+    }
 
     /**
      * @return string
