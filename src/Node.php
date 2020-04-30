@@ -1,6 +1,8 @@
 <?php
 namespace HtmlToRtf;
 
+use DOMElement;
+use DOMNode;
 use HtmlToRtf\Node\TextNode;
 use HtmlToRtf\Node\NotSupportedNode;
 use HtmlToRtf\Node\ElementNode;
@@ -21,9 +23,9 @@ class Node
     private $_domNode;
 
     /**
-     * @param DOMNode $node
+     * @param DOMNode $aDomNode
      */
-    public function __construct($aDomNode)
+    public function __construct(DOMNode $aDomNode)
     {
         $this->_domNode = $aDomNode;
     }

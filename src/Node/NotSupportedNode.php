@@ -6,5 +6,7 @@ use HtmlToRtf\Node;
 class NotSupportedNode extends Node
 {
     //do nothing
-    public function parse(){ return ''; }
+    public function parse() {
+        return '';
+    }
 }

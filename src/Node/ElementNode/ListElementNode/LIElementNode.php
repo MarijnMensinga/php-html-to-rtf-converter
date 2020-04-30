@@ -3,6 +3,7 @@ namespace HtmlToRtf\Node\ElementNode\ListElementNode;
 
 use HtmlToRtf\Node;
 use HtmlToRtf\Node\ElementNode;
+use HtmlToRtf\Node\ElementNode\ListElementNode;
 
 class LIElementNode extends ElementNode
 {

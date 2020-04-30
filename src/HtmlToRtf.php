@@ -1,6 +1,7 @@
 <?php
 namespace HtmlToRtf;
 
+use DOMDocument;
 use HtmlToRtf\Node;
 
 // References:
@@ -23,7 +24,7 @@ class HtmlToRtf
 
     public function __construct($html)
     {
-        $this->_doc = new \DOMDocument();
+        $this->_doc = new DOMDocument();
         $this->setHtml($html);
     }
 
@@ -61,14 +62,14 @@ class HtmlToRtf
 
     private function removeEmptyTextNodes($DOMNode)
     {
-        if(!($DOMNode instanceof DOMNode)){
+        if(!($DOMNode instanceof DOMNode)) {
             return;
         }
 
-        if($DOMNode instanceof DOMText && trim($DOMNode->nodeValue) === ''){
+        if($DOMNode instanceof DOMText && trim($DOMNode->nodeValue) === '') {
             $this->removeEmptyTextNodes($DOMNode->nextSibling);
             $DOMNode->parentNode->removeChild($DOMNode);
-        }else{
+        } else {
             $this->removeEmptyTextNodes($DOMNode->nextSibling);
             $this->removeEmptyTextNodes($DOMNode->firstChild);
         }

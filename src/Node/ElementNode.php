@@ -36,9 +36,15 @@ class ElementNode extends Node
         return $this->_attributes;
     }
 
-    public function getAttribute($name){ return $this->getAttributes()[$name]; }
-    protected function setRtfPrepend($rtf){ $this->_rtfPrepend = $rtf; }
-    protected function setRtfAppend($rtf){ $this->_rtfAppend = $rtf; }
+    public function getAttribute($name) {
+        return $this->getAttributes()[$name] ?? null;
+    }
+    protected function setRtfPrepend($rtf) {
+        $this->_rtfPrepend = $rtf;
+    }
+    protected function setRtfAppend($rtf) {
+        $this->_rtfAppend = $rtf;
+    }
     /**
      * @return string
      */

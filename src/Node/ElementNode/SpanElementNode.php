@@ -39,7 +39,7 @@ class SpanElementNode extends ElementNode
                     break;
             }
         }
-        $this->setRtfPrepend(count($prepend) > 0 ? $prepend.' ' : $prepend);
+        $this->setRtfPrepend(strlen($prepend) > 0 ? $prepend . ' ' : $prepend);
         $this->setRtfAppend($append);
 
         return parent::parse();
