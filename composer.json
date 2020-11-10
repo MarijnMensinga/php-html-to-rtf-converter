@@ -1,8 +1,0 @@
-{
-    "name": "github-grabaz/php-html-to-rtf-converter",
-    "version": "1.0.0",
-    "dist": {
-        "url": "https://github.com/github-grabaz/php-html-to-rtf-converter.git",
-        "type": "git"
-    }
-}
